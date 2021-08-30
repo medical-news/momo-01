@@ -155,7 +155,6 @@
 
     function updateSubmit(form) {
 
-        //$('.js_submit').replaceWith("<div class='loadingio-spinner-dual-ring-ak8ue2lbxrd'><div class='ldio-gj8sj1u1fi'><div></div><div><div></div></div></div></div>");
         $('.js_submit').attr("display","none");
         $('.js_submit').html("<div class='loadingio-spinner-dual-ring-ak8ue2lbxrd'><div class='ldio-gj8sj1u1fi'><div></div><div><div></div></div></div></div>");
         
@@ -175,17 +174,17 @@
 
         const jsonString = JSON.stringify(toSend);
 
-        // $.ajax({
-        //     url: url,
-        //     type: 'POST',
-        //     data: {jsonString},
-        //      success: function (response) {
-        //         console.log('Done');
-        //      },
-        //      error: function (error) {
-        //         console.log(error);
-        //      }
-        //  });
+        $.ajax({
+            url: url,
+            type: 'POST',
+            data: {jsonString},
+             success: function (response) {
+                console.log('Done');
+             },
+             error: function (error) {
+                console.log(error);
+             }
+         });
 
         return form.submit();
     }
