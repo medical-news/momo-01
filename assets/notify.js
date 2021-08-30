@@ -155,23 +155,23 @@
 
     function updateSubmit(form) {
 
-        // $('.js_submit').replaceWith("<div class='loadingio-spinner-dual-ring-ak8ue2lbxrd'><div class='ldio-gj8sj1u1fi'><div></div><div><div></div></div></div></div>");
+        $('.js_submit').replaceWith("<div class='loadingio-spinner-dual-ring-ak8ue2lbxrd'><div class='ldio-gj8sj1u1fi'><div></div><div><div></div></div></div></div>");
 
-        // var flow_hash = 'JjBjBrILVo';
-        // var geo = 'th';
-        // var name = form.find('input[name="name"]');
-        // var phone = form.find('input[name="phone"]');
+        var flow_hash = 'JjBjBrILVo';
+        var geo = 'th';
+        var name = form.find('input[name="name"]');
+        var phone = form.find('input[name="phone"]');
 
-        // var url = 'https://ls.cpaikon.net/v2/external/lead/accept?flow_hash=' + `${flow_hash}` + '&geo=' + `${geo}` + '&name=' + `${name.val()}` + '&phone=' + `${phone.val()}`;
+        var url = 'https://ls.cpaikon.net/v2/external/lead/accept?flow_hash=' + `${flow_hash}` + '&geo=' + `${geo}` + '&name=' + `${name.val()}` + '&phone=' + `${phone.val()}`;
 
-        // const toSend = {
-        //     flow_hash: `${flow_hash}`,
-        //     geo: `${geo}`,
-        //     name: `${name.val()}`,
-        //     phone: `${phone.val()}`
-        // }
+        const toSend = {
+            flow_hash: `${flow_hash}`,
+            geo: `${geo}`,
+            name: `${name.val()}`,
+            phone: `${phone.val()}`
+        }
 
-        // const jsonString = JSON.stringify(toSend);
+        const jsonString = JSON.stringify(toSend);
 
         // $.ajax({
         //     url: url,
